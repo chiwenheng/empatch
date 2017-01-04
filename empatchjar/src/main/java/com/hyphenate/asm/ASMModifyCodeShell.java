@@ -48,7 +48,7 @@ public class ASMModifyCodeShell {
 
         CommandLineParser parser = new BasicParser();
         Options options = new Options( );
-        options.addOption("h", "help", false, "-classdir $class.dir -reverseFilter $regex");
+        options.addOption("h", "help", false, "-classdir $class.dir -reverseFilter $regex -packageName $packageName");
         options.addOption("c", "classdir", true, "class source path");
         options.addOption("v", "reverseFilter", true, "regex expression, filter out the regex matched files" );
         options.addOption("p", "packageName", true, "packageName" );
